@@ -42,7 +42,7 @@ php artisan vendor:publish --tag=mixpost-auth-assets
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="mixpost-auth-config"
+php artisan vendor:publish --tag=mixpost-auth-config
 ```
 
 This is the contents of the published config file:
