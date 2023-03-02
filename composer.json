@@ -1,0 +1,70 @@
+{
+    "name": "inovector/mixpost-auth",
+    "description": "Mixpost's authentication feature",
+    "keywords": [
+        "inovector",
+        "mixpost",
+        "mixpost-auth",
+        "mixpost-user-auth",
+        "mixpost-authentication"
+    ],
+    "homepage": "https://github.com/inovector/mixpost-auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dima Botezatu",
+            "email": "dima@inovector.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-fileinfo": "*",
+        "illuminate/contracts": "^9.28|^10.0",
+        "spatie/laravel-package-tools": "^1.14"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-faker": "^1.0",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inovector\\MixpostAuth\\": "src",
+            "Inovector\\MixpostAuth\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inovector\\MixpostAuth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inovector\\MixpostAuth\\MixpostAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
