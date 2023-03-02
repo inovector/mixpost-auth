@@ -1,4 +1,4 @@
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
+[<img src="./art/standwithua.png" />](https://supportukrainenow.org)
 
 * * *
 
@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Mixpost Auth provides a login page for the [Mixpost](https://github.com/inovector/mixpost) package. If you already have user management, do not install this package. Only install it if you don't have one.
+Mixpost Auth provides a login page for the [Mixpost](https://github.com/inovector/mixpost) package. If you already have user management, do not install this package. Install only if you don't have one.
 
 Join our community:
 
