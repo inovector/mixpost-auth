@@ -9,7 +9,7 @@ class MixpostAuth
 {
     static function assets()
     {
-        $hot = __DIR__ . '/../resources/hot';
+        $hot = __DIR__ . '/../resources/dist/hot';
 
         $devServerIsRunning = file_exists($hot);
 

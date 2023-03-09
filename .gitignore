@@ -10,5 +10,5 @@ phpstan.neon
 testbench.yaml
 vendor
 node_modules
-resources/hot
+resources/dist/hot
 .DS_Store
