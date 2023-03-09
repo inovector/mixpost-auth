@@ -27,7 +27,7 @@ class MixpostAuthServiceProvider extends PackageServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                $this->package->basePath('/../resources/dist/vendor/mixpost-auth') => public_path("vendor/{$this->package->shortName()}"),
+                $this->package->basePath("/../resources/dist/vendor/{$this->package->shortName()}") => public_path("vendor/{$this->package->shortName()}"),
                 $this->package->basePath('/../resources/img') => public_path("vendor/{$this->package->shortName()}/img"),
             ], "{$this->package->shortName()}-assets");
         }
