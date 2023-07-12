@@ -2,6 +2,10 @@
 
 All notable changes to `Mixpost Auth` will be documented in this file.
 
+## v1.1.0 - 2023-07-12
+
+- Create an admin user with a static password (console command)
+
 ## v1.0.2 - 2023-03-09
 
 Fix static assets
