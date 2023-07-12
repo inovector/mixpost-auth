@@ -74,7 +74,7 @@ it('creates an admin user', function () {
 it('does not create an admin user if one already exists', function () {
     User::create([
         'name' => 'Admin',
-        'email' => 'admin@admin.com',
+        'email' => 'admin@example.com',
         'password' => bcrypt('password')
     ]);
 

@@ -41,8 +41,8 @@ class CreateUser extends Command
 
         if ($admin) {
             $name = 'Admin';
-            $email = 'admin@admin.com';
-            $password = Str::random(8);
+            $email = 'admin@example.com';
+            $password = 'changeme';
         }
 
         if (MixpostAuth::getUserClass()::where('email', $email)->exists()) {
@@ -60,8 +60,8 @@ class CreateUser extends Command
 
         if ($admin) {
             $this->comment("
-                - Your email: $email
-                - Your password: $password
+                - Email: $email
+                - Password: $password
             ");
         }
 
