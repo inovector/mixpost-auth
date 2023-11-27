@@ -5,6 +5,7 @@ namespace Inovector\MixpostAuth;
 use Illuminate\Support\Facades\Blade;
 use Inovector\MixpostAuth\Commands\CreateUser;
 use Inovector\MixpostAuth\Commands\ChangeUserPassword;
+use Inovector\MixpostAuth\Commands\DeleteUser;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,6 +20,7 @@ class MixpostAuthServiceProvider extends PackageServiceProvider
             ->hasRoute('web')
             ->hasCommands([
                 CreateUser::class,
+                DeleteUser::class,
                 ChangeUserPassword::class
             ]);
     }
