@@ -65,6 +65,10 @@ return [
 
 To create a new user, you can run this command: `php artisan mixpost-auth:create` and follow the instructions.
 
+## Delete a user
+
+To delete a user, you can run this command: `php artisan mixpost-auth:delete example@mail.com`.
+
 ## Change user password
 
 To change user password, you can run this command: `mixpost-auth:password example@mail.com` and follow the instructions.
