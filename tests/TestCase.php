@@ -34,8 +34,13 @@ class TestCase extends Orchestra
         if (!RefreshDatabaseState::$migrated) {
             $this->artisan('migrate:fresh', $this->migrateFreshUsing());
 
-            $migration = include __DIR__ . '/../vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_testbench_create_users_table.php';
-            $migration->up();
+            if ($this->app->version() > 10) {
+                $migration = include __DIR__ . '/../vendor/orchestra/testbench-core/laravel/migrations/0001_01_01_000000_testbench_create_users_table.php';
+                $migration->up();
+            } else {
+                $migration = include __DIR__ . '/../vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_testbench_create_users_table.php';
+                $migration->up();
+            }
 
             $this->app[Kernel::class]->setArtisan(null);
 
