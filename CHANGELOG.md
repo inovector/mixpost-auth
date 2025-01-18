@@ -2,6 +2,10 @@
 
 All notable changes to `Mixpost Auth` will be documented in this file.
 
+## v2.0.0 - 2025-01-18
+
+Added support for Laravel 11
+
 ## v1.2.0 - 2023-11-27
 
 - Added a command to delete a user
