@@ -21,8 +21,8 @@ Join our community:
 
 ## Requirements
 
-* Laravel Framework [^9.0, ^10.0]
-* PHP 8.1 or higher
+* Laravel Framework [^10.47, ^11.0]
+* PHP 8.2 or higher
 * Database (eg: MySQL, PostgresSQL, SQLite)
 
 ## Installation
