@@ -11,7 +11,7 @@
 </head>
 <body class="font-sans">
 <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-stone-500">
-    <div class="w-full sm:max-w-lg mt-6 px-6 py-4">
+    <div class="w-full sm:max-w-(--container-lg) mt-6 px-6 py-4">
         <div class="mb-lg">
             <a href="/">
                 <svg viewBox="0 0 349 119" class="h-16" fill="none" xmlns="http://www.w3.org/2000/svg">

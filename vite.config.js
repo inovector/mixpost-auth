@@ -1,5 +1,6 @@
 import {defineConfig} from 'vite';
 import laravel from 'laravel-vite-plugin';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     plugins: [
@@ -8,6 +9,7 @@ export default defineConfig({
             publicDirectory: 'resources/dist',
             buildDirectory: 'vendor/mixpost-auth',
             refresh: true
-        })
+        }),
+        tailwindcss(),
     ]
 });
