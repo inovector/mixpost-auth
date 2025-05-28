@@ -2,6 +2,10 @@
 
 All notable changes to `Mixpost Auth` will be documented in this file.
 
+## v2.1.0 - 2025-05-28
+
+Added support for Laravel 12
+
 ## v2.0.0 - 2025-01-18
 
 Added support for Laravel 11
